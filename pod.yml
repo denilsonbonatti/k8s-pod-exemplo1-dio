@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-php
+  labels:
+    app: myapp-php
+spec:
+  containers:
+  - name: myapp-php
+    image: denilsonbonatti/myapp-php:1.0
+    ports:
+    - containerPort: 80
